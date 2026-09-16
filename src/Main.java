@@ -17,6 +17,8 @@ public class Main {
         Ticket ticket = new Ticket(c1, camarero);
         ticket.agregarProducto(p1);
         ticket.agregarProducto(p6);
+        ticket.agregarProducto(p3);
+        ticket.agregarProducto(p4);
 
         double porcentaje = 10;
         double precioconDescuento = p1.aplicarDescuento(porcentaje);
