@@ -16,8 +16,12 @@ public class Ticket {
     }
 
     public void agregarProducto(Producto producto){
-        productos[contadorProductos] = producto;
-        contadorProductos += 1;
+        if (contadorProductos < productos.length) {
+            productos[contadorProductos] = producto;
+            contadorProductos += 1;
+        }else {
+            System.out.println("No se pueden añador mas productos");
+        }
     }
 
     public void productoDescontado(Producto producto, double precio){
