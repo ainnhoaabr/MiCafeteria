@@ -47,9 +47,15 @@ public class Ticket {
         System.out.println("Camarero: " + camarero.getNombre());
 
         System.out.println("Productos: ");
-        for (int i = 0; i < contadorProductos;i++){
-            System.out.println("- " + productos[i].getNombre() + " - " + productos[i].getPrecio() + "€");
+
+        for (int i = 0; i < contadorProductos;i++) {
+            if (productos[i] == productoDescuento) {
+                System.out.println("- " + productos[i].getNombre() + " - Precio con descuento: " + precioConDescuento + "€");
+            } else {
+                System.out.println("- " + productos[i].getNombre() + " - " + productos[i].getPrecio() + "€");
+            }
         }
+
         System.out.println("Total productos: " + contadorProductos);
         System.out.println("Descuento aplicado al café");
         System.out.println("Total precio: " + calcularTotal() + "€");
