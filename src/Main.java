@@ -1,4 +1,13 @@
+/**
+ * Clase principal donde se ejecuta el programa.
+ */
 public class Main {
+    /**
+     * Método principal en el que se crean los productos, el cliente, el camarero,
+     * genera un ticket, aplica un descuento y muestra el ticket.
+     *
+     * @param args argumentos recibidos desde la línea de comandos
+     */
     public static void main(String[] args) {
 
         Cliente c1 = new Cliente("Lidia", 689789887);
